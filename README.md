@@ -1,2 +1,2 @@
 # CapstoneDesign2022_1_DEML
-Development of encoding techniques using machine learning.
+DEML(Development of Encoding techniques using Machine Learning)
