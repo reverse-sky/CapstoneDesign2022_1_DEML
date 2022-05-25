@@ -1,6 +1,6 @@
 # 10주차 주간 업무 일지 
 ## 5G Nr LDPC 분석+ 구현 ver2
-✒️  5G의 기초가 되는 LDPC 분석 및 구현
+✒️  오픈 소스 등록을 위한 기존의 MAT형식의 파일 py파일로 형변환 진행 
 > pytorch를 사용하여 LDPC를 구현중 
 > sparse matrix에서 시간이 조금 걸리나 거의 다 구현이 완료되었음 공식 문서와 Error_rate 비교를 진행 예정
 > ![image](https://user-images.githubusercontent.com/45085563/170335095-48989b92-c3f3-4fb5-bf1f-dae26f79a448.png)
