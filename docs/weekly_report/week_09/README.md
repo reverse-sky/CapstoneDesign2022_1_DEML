@@ -11,7 +11,8 @@
 > ![image](https://user-images.githubusercontent.com/45085563/170330824-1ad2aca3-a0e2-4c42-a5a6-42379a4cd97e.png)
 + 기존까지는 BPSK상황이라 복소수 domain을 다루지 않았지만, qam방식을 사용하면서 복소수 부분이 있음을 명시! 
 + 각각 4,16,64,256일때의 qam그래프 
-+ 
+
+
 # 교수님과 주간 미팅 2022-04-29
 > **MATLAB기반 코드리뷰진행 **
 >![image](https://user-images.githubusercontent.com/45085563/170329228-05685402-6fde-4001-8e8c-03397f58c965.png)
