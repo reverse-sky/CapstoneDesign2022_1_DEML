@@ -1,4 +1,4 @@
-# 9주차 주간 업무 일지 
+# 10주차 주간 업무 일지 
 ## 5G Nr LDPC 분석 ver1
 ✒️  5G의 기초가 되는 LDPC 분석 및 이해 
 > ![image](https://user-images.githubusercontent.com/45085563/170329057-cd54d87d-e4f6-4df3-98b1-277e6096a8ff.png)  
