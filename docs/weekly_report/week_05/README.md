@@ -1,4 +1,4 @@
-# 4주차 주간 업무 일지 
+# 5주차 주간 업무 일지 
 ## 시스템 설계를 위한 시스템 분석 ver.4
 ✒️ 7,4 hamming code 구현 및 LDPC의 핵심 알고리즘인 Sum Product Algorithm분석 
 > + 5G LDPC 환경을 위한 Sum product Algorithm 분석 진행 
