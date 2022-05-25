@@ -7,7 +7,7 @@
 
 
 # 교수님과 주간 미팅 2022-04-22
-> **역대 통신의 역사 **
+>  **역대 통신의 역사**
 >![image](https://user-images.githubusercontent.com/45085563/170327675-05a33c82-ea65-4c9b-9eaa-cccc92055c2e.png)
 
 # 일정표 
