@@ -19,4 +19,4 @@
 
 > ![image](https://user-images.githubusercontent.com/45085563/170332922-9126cf32-c5c3-4259-9aef-530d36365b44.png)
 # 일정표 
->  ![image](https://user-images.githubusercontent.com/45085563/170336869-4100bb76-e434-46b3-911e-e63f551062a3.png)
+>  ![image](https://user-images.githubusercontent.com/45085563/170344254-1cbfb391-69a8-428d-b0ae-59543a6bb066.png)
