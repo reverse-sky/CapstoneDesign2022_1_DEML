@@ -1,4 +1,4 @@
-# 11주차 주간 업무 일지 
+# 12주차 주간 업무 일지 
 ## 5G Nr LDPC 분석+ 구현 ver3
 ✒️  5G Nr LDPC 구현 
 > + Sparse Matirx를 사용한 LDPC 구현 완료   
