@@ -1,5 +1,5 @@
 # 13주차 주간 업무 일지 
-## 소스 코드 정리 및 Github 관리 ver1
+## 소스 코드 정리 및 Github 관리 ver2
 ✒️ RNN 및 Unet을 LDPC에 적용하여 5G NR에 접목 + Github 관리 + 기말 보고서 정리
 
 > 여기에 QAM 사진 삽입
