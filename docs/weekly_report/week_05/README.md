@@ -11,12 +11,12 @@
 -----
 ✒️ 기존 방식의 문제점  
 > ![image](https://user-images.githubusercontent.com/45085563/170318659-ca88b4ed-793d-4966-ac10-be9796663979.png)
-> 0 or 1일 확률을  벡터로 저장해야 하므로 data의 차원이 1차원 늘어나게 되고 차원 계산의 복잡성을 처리하는 것이 까다로웠음 
+> 0 or 1일 확률을  벡터로 저장해야 하므로 data의 차원이 1차원 늘어나게 되고 차원 계산의 복잡성을 처리하는 것이 까다로웠다. 
 ![image](https://user-images.githubusercontent.com/45085563/170318635-716fedb9-3ff0-4f38-963f-d727df63e8e3.png)
-> LLR을 사용하여 1,2 vector를 하나의 수로 만드는 것이 가능함을 ㅣ
+> LLR을 사용하여 1,2 vector를 하나의 수로 만드는 것이 가능함을 구현.
 
 # 교수님과 주간 미팅 2022-04-01
-> LDPC
+> LDPC의 핵심 알고리즘인 LLR이해 
 >![image](https://user-images.githubusercontent.com/45085563/170318808-2dced803-f6d2-4470-973b-28d311342d3b.png)
 ![image](https://user-images.githubusercontent.com/45085563/170318971-0da01ae6-a12f-43ab-a19c-52b346b14b39.png)
 
