@@ -9,7 +9,7 @@
 ❗ 보안점 
 > hamming code와 같은 간단한 parity check matrix의 경우는 연산이 간단하지만, LDPC에서 사용하는 코드의 경우 압도적으로 0으로 채워져있는 parity check bit가 많다. 따라서 [torch.sparse](https://pytorch.org/docs/stable/sparse.html)를 사용하여 코드를 바꾸는 것을 교수님께서 추천 
 
-# 교수님과 주간 미팅 2022-04-01
+# 교수님과 주간 미팅 2022-04-08
 > LLR을 사용한 LDPC
 >![image](https://user-images.githubusercontent.com/45085563/170321218-5f8c7670-bc34-4835-b5bd-0f9c222a175b.png)
 # 일정표 
