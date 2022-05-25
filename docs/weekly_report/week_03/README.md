@@ -5,8 +5,9 @@
 > + 팀원 각각 Hamming code 구현 완료 이해가 둘다 Hamming code에 대해선 이해가 되었음을 인지 
 
 -----
-## 구현상의 문제점
-> for문을 사용해서 구현을 하다보니 code word의 갯수가 1e+6 의 경우 상당한 시간이 소요되어짐, matrix product를 이용한 효율적인 코딩 방식 추구 
+✒️ 구현상의 문제점
+> + <span style="color:red">for문을 사용해서 구현을 하다보니 code word의 갯수가 1e+6 의 경우 상당한 시간이 소요되어짐, matrix product를 이용한 효율적인 코딩 방식 추구</span>
+
 > + G matrix를 사용해 code word를 생성하고, H matrix를 이용해 Maximum Likelihood 를 진행  
 > ![image](https://user-images.githubusercontent.com/45085563/170306149-f5f0ecb4-db2e-471c-a2dd-368f534efde6.png)
 > + 우리가 구현한 Hamming code error_rate 
