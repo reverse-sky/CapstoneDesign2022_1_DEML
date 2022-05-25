@@ -14,7 +14,7 @@
 + 다음주에 IEEE가 개최하는 [2022 ICC](https://icc2022.ieee-icc.org/)학회에 참석하느라 시간 관리를 더욱 철저하게 할 것
 
 # 교수님과 주간 미팅 2022-05-06
-> **서울에서 열리는 IEEE의 공식행사 ICC에 대한 회의**
-> ![image](https://user-images.githubusercontent.com/45085563/170332922-9126cf32-c5c3-4259-9aef-530d36365b44.png)
+> **qam에 대한 분석진행 **
+> ![image](https://user-images.githubusercontent.com/45085563/170340971-a06378b7-4a86-442b-8c87-79c4b18132c5.png)
 # 일정표 
 > ![image](https://user-images.githubusercontent.com/45085563/170332103-f7e0bcba-eb43-439d-8169-d8014c41078b.png)
