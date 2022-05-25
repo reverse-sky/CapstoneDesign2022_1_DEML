@@ -27,4 +27,6 @@
 >![image](https://user-images.githubusercontent.com/45085563/170342723-b6368ec6-c9ab-4040-bc67-3f0cccdb2dfd.png)
 
 # 일정표 
->  ![image](https://user-images.githubusercontent.com/45085563/170344538-361654a0-639f-4f83-ad44-fd20aa80c830.png)
+> <img width="1738" alt="image" src="https://user-images.githubusercontent.com/45085563/170345188-baa988f7-be57-4cc5-8fa4-b22d796b269d.png">
+
+
