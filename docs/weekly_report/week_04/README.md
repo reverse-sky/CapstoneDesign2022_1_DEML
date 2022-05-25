@@ -9,7 +9,7 @@
 > ![image](https://user-images.githubusercontent.com/45085563/170317903-183289ce-a05c-475c-aa08-1fdb18f77868.png)
 > ![image](https://user-images.githubusercontent.com/45085563/170318034-6ff522e3-6285-42d1-8e2d-7c5b48f0dd8b.png)
 + variable node와 factor node로 0 or 1일 확률을 예측함을 인지
-# 교수님과 주간 미팅 2022-03-18
+# 교수님과 주간 미팅 2022-03-25
 > LDPC
 >![image](https://user-images.githubusercontent.com/45085563/170307850-e6f0e582-a4e6-4002-88a8-356ece05ea21.png)
 
