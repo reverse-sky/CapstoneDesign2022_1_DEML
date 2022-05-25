@@ -1,20 +1,18 @@
 # 10주차 주간 업무 일지 
-## 5G Nr LDPC 분석 ver1
-✒️  5G의 기초가 되는 LDPC 분석 및 이해 
-> ![image](https://user-images.githubusercontent.com/45085563/170329057-cd54d87d-e4f6-4df3-98b1-277e6096a8ff.png)  
->  LDPC는 대부분의 성분이 0인 sparse matirx임을 인지
->  **대부분이 0bit**이므로 행렬 연산은 비효율적임을 인지하고 sparse matrix를 사용하는 것의 중요성 파악
+## 5G Nr LDPC 분석+ 구현 ver2
+✒️  5G의 기초가 되는 LDPC 분석 및 구현
+> pytorch를 사용하여 LDPC를 구현중 
+> sparse matrix에서 시간이 조금 걸리나 거의 다 구현이 완료되었음 공식 문서와 Error_rate 비교를 진행 예정 
 
  
 -----
-❗ 주의 사항  
-> ![image](https://user-images.githubusercontent.com/45085563/170330824-1ad2aca3-a0e2-4c42-a5a6-42379a4cd97e.png)
-+ 기존까지는 BPSK상황이라 복소수 domain을 다루지 않았지만, qam방식을 사용하면서 복소수 부분이 있음을 명시! 
-+ 각각 4,16,64,256일때의 qam그래프 
+# ❗ 주의 사항❗  
+>
++ <span style="color:red">기말 보고서 제출 전까지 DNN을 접목시키기 힘들 것 같음 시간 관리가 관건</span>
++ 다음주에 IEEE가 개최하는 [2022 ICC](https://icc2022.ieee-icc.org/)학회에 참석하느라 시간 관리를 더욱 철저하게 할 것
 
-
-# 교수님과 주간 미팅 2022-04-29
-> **MATLAB기반 코드리뷰진행 **
->![image](https://user-images.githubusercontent.com/45085563/170329228-05685402-6fde-4001-8e8c-03397f58c965.png)
+# 교수님과 주간 미팅 2022-05-06
+> **서울에서 열리는 IEEE의 공식행사 ICC에 대한 회의**
+> ![image](https://user-images.githubusercontent.com/45085563/170332922-9126cf32-c5c3-4259-9aef-530d36365b44.png)
 # 일정표 
-> ![image](https://user-images.githubusercontent.com/45085563/170328672-dac1d537-acae-4769-88bb-06b7cd0f0963.png)
+> ![image](https://user-images.githubusercontent.com/45085563/170332103-f7e0bcba-eb43-439d-8169-d8014c41078b.png)
