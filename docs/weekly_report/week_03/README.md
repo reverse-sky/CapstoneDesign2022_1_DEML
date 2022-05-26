@@ -14,6 +14,10 @@
 > <img width="500" alt="image" src="https://user-images.githubusercontent.com/45085563/170305781-7ebcd03a-adba-4ef6-a86e-84dee2b33575.png">
 >공식 문서상의 code rate 비교 
 
+
+# 소스코드
+- <a href="./docs/src">소스코드</a>
+
 ![image](https://user-images.githubusercontent.com/45085563/170305681-4b7f1eb2-4c0b-47dd-885e-c18c15ad9a55.png)
 # 교수님과 주간 미팅 2022-03-18
 > + (7,4) Hamming code 구현 및 error rate 비교 
