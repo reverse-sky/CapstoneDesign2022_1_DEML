@@ -10,6 +10,7 @@
 # 교수님과 주간 미팅 2022-03-11
 > + BPSK 방식의 선형 채널 코드 QNA 및 선형 시스템 이해 
 >![image](https://user-images.githubusercontent.com/45085563/170301799-a4b4bf10-8113-4607-a991-180f8f3920ed.png)
+![image](https://user-images.githubusercontent.com/63450024/170581514-811ff98d-3be9-43be-b484-84abd5e00241.png)
 
 
 
