@@ -51,8 +51,9 @@
 ---
 
 #### 본 프로젝트에서는 물리 계층에서 일어나는 일을 다룰 것이며, 통신이 일어나는 과정은 다음과 같다. 
->![](https://velog.velcdn.com/images/reversesky/post/fccb39a0-582f-4068-8cf5-ba6b418261a7/image.png)
->+ 통신 시스템은 기본적으로 송신기(transmitter)와 전송매체(Channel), 수신기(Receiver)로 구성되어 있다. 
+><img src="https://velog.velcdn.com/images/reversesky/post/fccb39a0-582f-4068-8cf5-ba6b418261a7/image.png" width="600"  alt="그림 설명" /> 
+>
++  통신 시스템은 기본적으로 송신기(transmitter)와 전송매체(Channel), 수신기(Receiver)로 구성되어 있다. 
 > 1. 송신기는 효과적인 메세지 전송을 위하여 기저대역 신호를 변형시켜서 채널로 보내준다.    
 >2. 채널은 송신기의 출력이 수신기에 도달하기 위하여 통과하는 매체로 채널은 이중 선 전선, 동축 케이블, 광섬유 케이블과 같은 유선 링크와 공기나 바닷물 같은 무선 링크로 나누어 진다.  
 >3. 수신기는 채널을 통과하면서 손상된 신호를 원래의 신호에 근사하도록 복원하는 역활을 한다. 
@@ -62,11 +63,11 @@
 
 >다음은 위의 과정을 파트별로 세분화 한 디지털 통신 시스템의 블록도이다. 
 
-<img src="https://velog.velcdn.com/images/reversesky/post/8af6e3a9-5c09-4675-a641-af039a660268/image.png" width="600" height="300" alt="그림 설명" />
+<img src="https://velog.velcdn.com/images/reversesky/post/8af6e3a9-5c09-4675-a641-af039a660268/image.png" width="600"  alt="그림 설명" />
 > 디지털 통신 시스템은 크게 소스 코딩(source coding)과 채널 코딩(channel coding)으로 나눌 수 있다. 소스 코딩은 디지털 데이터를 압축하여 전송량을 줄이는 기법이며, 주로 한정된 대역폭 특성을 극복하기 위해 사용한다. 채널 코딩은 통신 채널을 통과하면서 발생하는 오류를 수신기에서 검출하거나 정정할 수 있도록 송신기에서 의도적으로 데이터를 추가하는 기법이다. 본 프로젝트는 현재 5G NR통신에서 상용중인  LDPC 채널 코딩 방식을 pytorch를 이용하여 구현하는 것을 목표로 하고 있다.    
 
 > 우선 LDPC 채널 코딩을 구현하기 위해 채널 코딩 시스템에 대해서 알아 보자. 
-<img src="https://velog.velcdn.com/images/reversesky/post/5b1fa40e-b1b4-4bd3-a992-c8babc2b0b15/image.png" width="600" height="300" alt="b" />
+<img src="https://velog.velcdn.com/images/reversesky/post/5b1fa40e-b1b4-4bd3-a992-c8babc2b0b15/image.png" width="600" alt="b" />
 
 > 다음은 AWGN채널을 사용하는 무선 이동 통신 시스템을 나타낸 구조도 이다. AWGN채널을 사용하는 채널 코딩은 크게 ENC(Encoding channel), AWGN(Additive White Gaussian Noise), DEC(Decoding-Channel)로 나누어 진다. 이는 디지털 통신 시스템 블록도에서 소스 코딩 부분을 제외한 부분으로 Channel Coder와 Modulation부분을 합쳐서 ENC, AWGN채널을 통과해서 수신받은 신호를 demodulation하고 Channel decoder 하는 부분을 합쳐서 DEC로 정의한다. 
 > + AWGN 채널은 대기중에 신호를 전송시 더해지는 잡음을 표현하는 채널로서 잡음 $Z$~ $N(0,\sigma^2)$를 확률분포로 갖는다. 
