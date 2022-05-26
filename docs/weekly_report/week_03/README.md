@@ -16,7 +16,7 @@
 
 
 # 소스코드
-- <a href="./docs/src">소스코드</a>
+- <a href="../../docs/src">소스코드</a>
 
 ![image](https://user-images.githubusercontent.com/45085563/170305681-4b7f1eb2-4c0b-47dd-885e-c18c15ad9a55.png)
 # 교수님과 주간 미팅 2022-03-18
