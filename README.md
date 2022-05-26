@@ -11,7 +11,7 @@
 > ### [3. Problem_Environment](#3-Problem_Environment)
 >   -  [OSI 7 Layer](#OSI-7-Layer)
 >   -  [Channel Coding](#Channel-Coding) 
->   -  [Hamming (7,4) code](#-Hamming-(7,4)-code)  
+>   -  [Hamming (7,4) code](#-Hamming(7,4)-code)  
 >   -  [LDPC](#-LDPC)
 > ### [4. Simulation](#4-Simulation)
 >  -  Hamming (7,4) code  
@@ -90,7 +90,7 @@
  디지털 통신에서는 수신측에서 원하는 비트오율(bit error rate:BER)을 기준으로 평가한다. 그러나 메세지는 한 bit만 잘못되어도 메세지가 왜곡되어진다. 따라서 n개의 bit를 보냈을 때 하나의 bit만 잘못 예측하더라도 전송한 메세지의 예측을 실패했다고 가정하는 오류 측정 기준을 BLER(Block Error Rate)으로 정의한다. 
  디지털 통신에서는 어떤 경우에나 통신을 위한 최소 SNR이 요구되며, SNR값이 커질 수록 BER는 증가한다.   
 
-### Hamming (7,4) code  
+### Hamming(7,4) code  
 > + LDPC를 pytorch로 구현하기 전 가장 간단한 형태의 선형 코딩을 구현하였다. 
 Hamming code는 1950년 미국 Bell연구소의 Hamming이 고안한 간단한 선형 블록 부호이다. BPSK(Binary Phase Shift keying)를  사용하는 AWGN 채널에서 Hamming code는 4개의 bit에서 표현 가능한 16가지의 이진 비트를 전송 할 수 있으며 보내는 메세지를 codeword, 전송 가능한 16가지의 모든 codeword의 집합을 codebook이라고 부른다. 
 + Hamming (7,4) code는 실제 정보가 담긴 길이 4bit의 Information bit 4bits에 길이가 3인 오류 정정, 검출을 위한 Parity check bits를 덧붙여 총 길이 7의 bits로 부호화 하는 방법이다.
