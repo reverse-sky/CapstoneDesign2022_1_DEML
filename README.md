@@ -168,4 +168,3 @@ LDPC Decoding 과정은 Tanner graph를 사용한 sum product algorithm으로 �
 >+ 2022 IEEE ICC 학회에서 확인할 수 있었던 것은 이미 통신의 다양한 곳에서 DNN(Deep Neural Network)뿐만 아니라 RL(Reinforcement Learning), Cloud Computing을 사용한 distributed learning등에 대한 연구가 이미 활발하게 진행 중이라는 사실이다.   
 > + 앞서 기술했듯 Keras기반의 물리 계층 오픈 소스 라이브러리 [Sionna: An Open-Source Library for Next-Generation Physical Layer Research](https://github.com/NVlabs/sionna)가 이미 등록되어 있으며, 다양한 사람들이 통신과 딥러닝을 연동하기 위해서 노력하고 있다. 
 > + 이에 본 프로젝트를 통해서 구현한 파일을 오픈 소스로 등록해 통신 연구자들이 딥러닝과 통신을 연구하기 쉽도록 기반을 만들었다는 것에 큰 의의를 둔다. 
-> > 이처럼 
