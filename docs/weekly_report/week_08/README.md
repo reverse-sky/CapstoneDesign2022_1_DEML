@@ -10,5 +10,5 @@
 >  **역대 통신의 역사**
 >![image](https://user-images.githubusercontent.com/45085563/170327675-05a33c82-ea65-4c9b-9eaa-cccc92055c2e.png)
 
-# 일정표 
-> ![image](https://user-images.githubusercontent.com/45085563/170327598-8b4da4f6-4202-40ad-b8e3-1e8c69901f67.png)
+# WBS
+> ![image](https://user-images.githubusercontent.com/63450024/170595351-9fb60b0b-3fd3-4fb2-b589-ba3fe53e0958.png)
