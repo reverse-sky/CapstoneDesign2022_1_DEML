@@ -82,7 +82,8 @@ def resize_sparse():
 ---
 ## Week 11
 구현한 패키지를 사용하여 1/3, 2/3, 8/9 의 Code rate에 대한 결과값 확인 및 비교
-비교를 위한 성능 기준 :[Bae, J., Abotabl, A., Lin, H., Song, K., & Lee, J. (2019). An overview of channel coding for 5G NR cellular communications. APSIPA Transactions on Signal and Information Processing, 8, E17. doi:10.1017/ATSIP.2019.10](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/CF52C26874AF5E00883E00B6E1F907C7/S2048770319000106a.pdf/an-overview-of-channel-coding-for-5g-nr-cellular-communications.pdf)
+비교를 위한 성능 기준 :
+[Bae, J., Abotabl, A., Lin, H., Song, K., & Lee, J. (2019). An overview of channel coding for 5G NR cellular communications. APSIPA Transactions on Signal and Information Processing, 8, E17. doi:10.1017/ATSIP.2019.10](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/CF52C26874AF5E00883E00B6E1F907C7/S2048770319000106a.pdf/an-overview-of-channel-coding-for-5g-nr-cellular-communications.pdf)
 <img src="https://velog.velcdn.com/images/heigarnik/post/bcc0ecc4-f7eb-4f3e-a284-58bab72e4058/image.png">
 
 
