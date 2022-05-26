@@ -47,18 +47,18 @@ LDPC 스터디 및 5G 표준 규격 개요
 통신 환경관리를 위한 패키지 구현 : Communication.py
 ```python
 class communication():
-    def get_constellation()
-    def get_bitmap()
-    def modulate()
-    def AWGN()
-    def demodulate()
+    def get_constellation():
+    def get_bitmap():
+    def modulate():
+    def AWGN():
+    def demodulate():
     
-def gen_random_bits()
-def dec2bin()
-def bin2dec()
-def cpdf_conditional_premargin()
-def cpdf_conditional()
-def cpdf_marginal()
+def gen_random_bits():
+def dec2bin():
+def bin2dec():
+def cpdf_conditional_premargin():
+def cpdf_conditional():
+def cpdf_marginal():
 ```
 
 ---
