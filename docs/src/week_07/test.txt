@@ -1,0 +1,2 @@
+hamming 코드
+llr o coo_tensor o

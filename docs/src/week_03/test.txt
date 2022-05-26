@@ -1,0 +1,2 @@
+hamming 코드를 matrix 연산을 통해 구현
+lower bound로 shannon_limit 사용

@@ -1,0 +1,2 @@
+hamming코드의 upper bound로 hard coding을 사용하는 방법을 적용.
++ Tanner Graph의 이해

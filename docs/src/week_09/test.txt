@@ -1,0 +1,1 @@
+modulation, demodulation, AWGN, constellation, dec to bin, bin to dec 등의 함수를 정리하여 communication.py 생성
