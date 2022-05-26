@@ -20,5 +20,5 @@
 >![image](https://user-images.githubusercontent.com/45085563/170318808-2dced803-f6d2-4470-973b-28d311342d3b.png)
 ![image](https://user-images.githubusercontent.com/45085563/170318971-0da01ae6-a12f-43ab-a19c-52b346b14b39.png)
 
-# 일정표 
-> <img width="1733" alt="image" src="https://user-images.githubusercontent.com/45085563/170318525-fb54ef0d-571f-4bca-98c4-54e8714c4ed5.png">
+# WBS 
+![image](https://user-images.githubusercontent.com/63450024/170587332-fbc36ea9-48c8-4a5c-be59-ba7bea69041f.png)
