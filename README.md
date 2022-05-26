@@ -12,10 +12,10 @@
 >   -  [OSI 7 Layer](#OSI-7-Layer)
 >   -  [Channel Coding](#Channel-Coding) 
 >   -  [Hamming (7,4) code](#-Hamming(7,4)-code)  
->   -  [LDPC](#-LDPC)
+>   -  [LDPC](#-LDPC(Low-Density-Parity-Check))
 > ### [4. Simulation](#4-Simulation)
->  -  Hamming (7,4) code  
->  -  LDPC
+>  -  [Hamming (7,4) code](#-Hamming-(7,4)-code)  
+>  -  [LDPC](#-LDPC)
 > ### [5. Result](#5-Result)
 > ### [6. Expectation plan](#6-Expectation-plan)
 
@@ -109,7 +109,7 @@ $G$는 codeword를 만들어내는 Generator matrix이며 codeword $C=MG$로 부
 
 
 
-
+### LDPC(Low Density Parity Check)
 
 
 
@@ -118,7 +118,8 @@ $G$는 codeword를 만들어내는 Generator matrix이며 codeword $C=MG$로 부
 
 
 ## 4 Simulation
->
+### Hamming (7,4) code
+### LDPC
 
 ## 5 Result
 
