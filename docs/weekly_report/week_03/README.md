@@ -25,5 +25,5 @@
 
 
 
-# 일정표 
-> <img width="1736" alt="image" src="https://user-images.githubusercontent.com/45085563/170303877-46cfcf0f-acf8-4891-b0b0-35d0b8351318.png">
+# WBS 
+![image](https://user-images.githubusercontent.com/63450024/170583606-94e38bb0-1af6-40e2-b7ff-ce0ae998cec4.png)
