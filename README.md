@@ -110,9 +110,7 @@ $HC^T = 0$ 인 성질을 이용해서 오류를 검출할 수 있다.
 
 >Channel Decoding은  $ML$(Maximum Likelyhood)을 이용하여 codebook에서 가장 오차가 적은 값으로 결정한다. $ML$ 수식은 다음과 같다.
 
-> $\hat M = argmax_{x\in\tilde C}\enspace log\enspace p(y|x)\\
-\quad\enspace  = argmin_{x\in \tilde C} \enspace |y-x|^2
-\\\quad\enspace=argmax_{x\in\tilde{C}} \enspace y^Tx$
+![image](https://user-images.githubusercontent.com/45085563/170549308-cc153431-ce98-461e-aaa9-620112017cfa.png)
 
 ----
 
