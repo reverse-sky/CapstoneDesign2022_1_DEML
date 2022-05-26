@@ -17,5 +17,4 @@
 > **MATLAB기반 코드리뷰진행 **
 >![image](https://user-images.githubusercontent.com/45085563/170329228-05685402-6fde-4001-8e8c-03397f58c965.png)
 # WBS 
-> ![image](https://user-images.githubusercontent.com/63450024/170600617-7a7642a5-2652-4eb3-8689-a196bcce5ec6.png)
-
+> ![image](https://user-images.githubusercontent.com/63450024/170600875-084b9c79-3740-4e2b-90cf-e91e952de397.png)
