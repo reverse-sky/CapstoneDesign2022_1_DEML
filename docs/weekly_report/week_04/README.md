@@ -15,5 +15,5 @@
 
 
 
-# 일정표 
-> ![image](https://user-images.githubusercontent.com/45085563/170307775-4b9486a7-6ddd-49a9-a47d-d49b22071029.png)
+# WBS 
+![image](https://user-images.githubusercontent.com/63450024/170584981-0ab1c6f4-9c0c-432b-bf49-fd47deecf641.png)
