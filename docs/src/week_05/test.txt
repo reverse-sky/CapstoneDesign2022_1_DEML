@@ -1,3 +1,0 @@
-SPA 공부
-sumproduct 알고리즘 공부 hamming 코드에 적용
-llr x coo_tensor x
