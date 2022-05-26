@@ -12,5 +12,5 @@
 # 교수님과 주간 미팅 2022-04-08
 > LLR을 사용한 LDPC
 >![image](https://user-images.githubusercontent.com/45085563/170321218-5f8c7670-bc34-4835-b5bd-0f9c222a175b.png)
-# 일정표 
-> ![image](https://user-images.githubusercontent.com/45085563/170320844-94f56abe-4b6b-4bef-80ca-d08acc6a2cae.png)
+#  
+![image](https://user-images.githubusercontent.com/63450024/170591320-e13385fe-0b58-492e-87c2-c65ce7d48b1c.png)
