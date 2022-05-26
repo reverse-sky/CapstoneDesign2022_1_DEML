@@ -15,4 +15,4 @@
 
 
 # WBS 
-![image](https://user-images.githubusercontent.com/63450024/170579817-585ded03-ca7c-4b8b-9822-8cd3aede5ae7.png)
+![image](https://user-images.githubusercontent.com/63450024/170580316-db9da4d1-1f3a-4de4-87f6-8322c417bf72.png)
