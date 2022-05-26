@@ -3,8 +3,6 @@
 ## DEML(Development of Encoding techniques using Machine Learning)
 ------------
 ### - <a href="./docs/weekly_report">주차별 회의록</a>
-### - <a href="./docs/src">주차별 구현 Code</a>
-
  ----------------
  # Contents
 
@@ -38,6 +36,8 @@
 >+ 이에 본 프로젝트는 5G통신에서 사용되는 통신 물리 계층 시뮬레이터를 pytorch 기반으로 딥러닝과 연동할 수 있도록 구현하는 것을 목표로 한다. 물리계층 시뮬레이터를 pytorch로 구현함에 따라, GPU를 사용한 병렬 연산을 진행할 수 있다. 이는 기존의 python이 가진 느린 연산속도라는 단점을 극복할 수 있게 된다. 그 과정에서 네트워크 통신의 기반인 물리계층을 공부하며 통신 네트워크 시스템의 기반을 이해하고, 최종적으로 구현한 pytorch 라이브러리를 사용하여 주요 채널 코딩 중 하나인 LDPC코드를 딥러닝과 연동하여 성능을 개선하는 것을 궁극적인 목표로 한다. 
 
 -----
+---------
+
 ## 2 Team
 > ## TEAM
 |Name|Department|Contact|Github|
@@ -50,14 +50,16 @@
 |---|---|---|
 | Lim sung hoon | Hallym Univ(Prof.) | shlim@hallym.ac.kr
 
+----
+----
 ## 3 Problem_Environment
 ### OSI 7 Layer
 > 5G 통신 물리 계층 시뮬레이터를 구현하기 전 네트워크 시스템의 전반적인 이해가 필요하다. 
 > ![](https://velog.velcdn.com/images/reversesky/post/049b4dc0-a635-4163-81d3-99018d1beb9a/image.png)
 + 위의 그림은 ISO에서 제시한 **OSI 7계층 모델**이다. 연결된 두 호스트는 각각 7개의 계층으로 구성된 모듈을 수행함으로써 데이터 송수신이 가능하다. 전송 데이터는 송신 호스트의 응용 계층에서 시작해 하위 계층으로 순차적으로 전달되어, 최종적으로 물리 계층에서 수신 호스트에 전달된다. 수신 호스트에는 데이터를 상위 계층으로 순차적으로 이동시켜 응용 계층까지 보내준다. 
 + 여기서 계층의 최하단의 위치한 물리 계층은 전송 매체의 물리적 인터페이스에 관한 사항을 기술한다.  즉, 전송 매체에서는 개별 정보의 **BIT** 교환 문제를 다룬다.
----
 
+------------
 ### Channel Coding 
 ><img src="https://velog.velcdn.com/images/reversesky/post/fccb39a0-582f-4068-8cf5-ba6b418261a7/image.png" width="600"  alt="그림 설명" /> 
 >
@@ -92,9 +94,10 @@
  디지털 통신에서는 수신측에서 원하는 비트오율(bit error rate:BER)을 기준으로 평가한다. 그러나 메세지는 한 bit만 잘못되어도 메세지가 왜곡되어진다. 따라서 n개의 bit를 보냈을 때 하나의 bit만 잘못 예측하더라도 전송한 메세지의 예측을 실패했다고 가정하는 오류 측정 기준을 BLER(Block Error Rate)으로 정의한다. 
  디지털 통신에서는 어떤 경우에나 통신을 위한 최소 SNR이 요구되며, SNR값이 커질 수록 BER는 증가한다.   
 
+---------
+
 ### Hamming(7,4) code  
-> + LDPC를 pytorch로 구현하기 전 가장 간단한 형태의 선형 코딩을 구현하였다. 
-Hamming code는 1950년 미국 Bell연구소의 Hamming이 고안한 간단한 선형 블록 부호이다. BPSK(Binary Phase Shift keying)를  사용하는 AWGN 채널에서 Hamming code는 4개의 bit에서 표현 가능한 16가지의 이진 비트를 전송 할 수 있으며 보내는 메세지를 codeword, 전송 가능한 16가지의 모든 codeword의 집합을 codebook이라고 부른다. 
+> + Hamming code는 1950년 미국 Bell연구소의 Hamming이 고안한 간단한 선형 블록 부호이다. BPSK(Binary Phase Shift keying)를  사용하는 AWGN 채널에서 Hamming code는 4개의 bit에서 표현 가능한 16가지의 이진 비트를 전송 할 수 있으며 보내는 메세지를 codeword, 전송 가능한 16가지의 모든 codeword의 집합을 codebook이라고 부른다. 
 + Hamming (7,4) code는 실제 정보가 담긴 길이 4bit의 Information bit 4bits에 길이가 3인 오류 정정, 검출을 위한 Parity check bits를 덧붙여 총 길이 7의 bits로 부호화 하는 방법이다.
 
 >+ Hamming (7,4) code는 Identity matrix $I$와  Parity check matirx $P$를 사용하여 다음과 같이 나타낼 수 있다. $G = [I,P]$
@@ -103,25 +106,51 @@ $G$는 codeword를 만들어내는 Generator matrix이며 codeword $C=MG$로 부
 
 >+ $H$ matrix는 $H = [P^T,I]$로 나타낼 수 있다. 
 ><img src="https://velog.velcdn.com/images/reversesky/post/e41e4a84-239c-4965-9f7a-82207668217c/image.png" width="300" alt="b" />
+$HC^T = 0$ 인 성질을 이용해서 오류를 검출할 수 있다. 
+
+>Channel Decoding은  $ML$(Maximum Likelyhood)을 이용하여 codebook에서 가장 오차가 적은 값으로 결정한다. $ML$ 수식은 다음과 같다.
+
+> $\hat M = argmax_{x\in\tilde C}\enspace log\enspace p(y|x)\\
+\quad\enspace  = argmin_{x\in \tilde C} \enspace |y-x|^2
+\\\quad\enspace=argmax_{x\in\tilde{C}} \enspace y^Tx$
+
 ----
 
-
-[Sum Product Algorithm](https://ieeexplore.ieee.org/document/910572)
-
-
-
-
 ### LDPC(Low Density Parity Check)
+> + LDPC code는 채널 코딩에서 사용되는 이진 블록 코드의 한 종류이다. 5G NR 이동 무선 통신의 표준 코드로서, 대부분의 원소가 0으로 이루어진 희소 행렬을 Parity check matrix로 사용한다. 
+> + LDPC code는 2개의 Base graph 가지고 있다. Base graph는 다양한 크기의 H행렬을 생성함으로서 효율적인 encoding을 수행한다. Base graph는 밑의 그림처럼 내부적으로 6개의 영역으로 나누어 진다. 
+><img src="https://velog.velcdn.com/images/reversesky/post/051cedac-1650-4c66-8ff3-d4ec861df687/image.png" width="150" alt="b" />
+><img src="https://velog.velcdn.com/images/reversesky/post/20ed4a90-cb3c-4429-8681-7f690225cd4e/image.png" width="500" alt="b" />
+위의 그림은 LDPC의 Base Graph 2를 영역별로 나타낸 것이며, 0이 아닌 값은 파란 점으로 나타내고 있다. Base Graph의 대부분은 0으로 이루어진 행렬, 즉 희소 행렬이며, 대부분이 0으로 이루어져 있기 때문에 연산 복잡도를 줄이기 위해서 다양한 알고리즘 방법이 고안해왔다. 
+
+>Tanner Graph 
+> LDPC는  
+위에서 기술한 Hamming (7,4) code를 Tanner graph로 표현하면 다음과 같다. 
+
+><img src="https://velog.velcdn.com/images/reversesky/post/4e9bc952-37ab-4e55-b186-76d16995ec2a/image.png" width="600" alt="b" />
+LDPC Decoding 과정은 Tanner graph를 사용한 sum product algorithm으로 수행되어진다. 
+
+Sum product Algorithm은 [Factor graphs and the sum-product algorithm](https://ieeexplore.ieee.org/document/910572) 논문에 자세하게 설명되어있다.  
 
 
 
 
-
-
+-----
+-----
 
 ## 4 Simulation
 ### Hamming (7,4) code
+
+-----
+
 ### LDPC
+> 본 실험 환경은 2개의 base matrix중 $BG1: 46 \times 68$ matrix를 사용하여 진행하였다.
+
+### DNN
+>채널 코딩은 선형 부호 코드와 신호 변조의 조합으로 사용되고 있다. 본 실험에서는 LDPC,QAM기반 신호 변조 과정을 심층 신경망으로 대체한다. 메세지가 연속적이라는 특성을 사용하여 RNN구조를 사용한다. Encoder부분에는 LDPC를 사용하여 Encoding을 진행한 뒤, AWGN 채널을 통과한 신호 $Y^n$을 RNN으로 Decoding을 진행한다.  
+
+-----
+----
 
 ## 5 Result
 
