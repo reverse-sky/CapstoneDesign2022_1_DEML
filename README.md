@@ -118,20 +118,23 @@ $HC^T = 0$ 인 성질을 이용해서 오류를 검출할 수 있다.
 
 ### LDPC(Low Density Parity Check)
 > + LDPC code는 채널 코딩에서 사용되는 이진 블록 코드의 한 종류이다. 5G NR 이동 무선 통신의 표준 코드로서, 대부분의 원소가 0으로 이루어진 희소 행렬을 Parity check matrix로 사용한다. 
+>+ LDPC code는 LLR(Log Likelihood Ratio)를 입력으로 받아 bit를 예상한다. 
+
+><img src="https://velog.velcdn.com/images/reversesky/post/de61abeb-e859-47a6-bdf2-4fbbd68500bb/image.png" width="300" alt="b" />
+
 > + LDPC code는 2개의 Base graph 가지고 있다. Base graph는 다양한 크기의 H행렬을 생성함으로서 효율적인 encoding을 수행한다. Base graph는 밑의 그림처럼 내부적으로 6개의 영역으로 나누어 진다. 
 ><img src="https://velog.velcdn.com/images/reversesky/post/051cedac-1650-4c66-8ff3-d4ec861df687/image.png" width="150" alt="b" />
 ><img src="https://velog.velcdn.com/images/reversesky/post/20ed4a90-cb3c-4429-8681-7f690225cd4e/image.png" width="500" alt="b" />
-위의 그림은 LDPC의 Base Graph 2를 영역별로 나타낸 것이며, 0이 아닌 값은 파란 점으로 나타내고 있다. Base Graph의 대부분은 0으로 이루어진 행렬, 즉 희소 행렬이며, 대부분이 0으로 이루어져 있기 때문에 연산 복잡도를 줄이기 위해서 다양한 알고리즘 방법이 고안해왔다. 
++ 위의 그림은 LDPC의 Base Graph 2를 영역별로 나타낸 것이며, 0이 아닌 값은 파란 점으로 나타내고 있다. Base Graph의 대부분은 0으로 이루어진 행렬, 즉 희소 행렬이며, 대부분이 0으로 이루어져 있기 때문에 연산 복잡도를 줄이기 위해서 [TORCH.SPARSE_COO_TENSOR](https://pytorch.org/docs/stable/generated/torch.sparse_coo_tensor.html#torch-sparse-coo-tensor) 를 사용해서 효율적으로 연산할 수 있다. 
 
->Tanner Graph 
-> LDPC는  
+> + LDPC Code는 decoding 과정에서 Sum Product algorithm 을 사용한다.  
 위에서 기술한 Hamming (7,4) code를 Tanner graph로 표현하면 다음과 같다. 
-
 ><img src="https://velog.velcdn.com/images/reversesky/post/4e9bc952-37ab-4e55-b186-76d16995ec2a/image.png" width="600" alt="b" />
 LDPC Decoding 과정은 Tanner graph를 사용한 sum product algorithm으로 수행되어진다. 
+>+ Sum product Algorithm은 [Factor graphs and the sum-product algorithm](https://ieeexplore.ieee.org/document/910572) 논문에서 제안된 알고리즘으로 Tanner graph에서 두개의 연결되어있는 node가 서로의 정보를 update하는 방식이다. LDPC Code는 이 방식을 통해 modulate 된 신호를 예측한다.   
 
-Sum product Algorithm은 [Factor graphs and the sum-product algorithm](https://ieeexplore.ieee.org/document/910572) 논문에 자세하게 설명되어있다.  
-
+>+ LDPC code는 코드의 전송 비를 맞추기 위해 Puncturing을 사용한다. Puncturing은 H행렬을 크기를 변환하며 일부분만 취하는 방식으로 오류 발생시 재 전송 때 좀 더 짧은 데이터를 보내도 decoding이 된다는 장점이 있다. 
+![](https://velog.velcdn.com/images/reversesky/post/95dc9bad-4a14-4a5a-81b2-63c485b56d36/image.png)
 
 
 
@@ -147,7 +150,8 @@ Sum product Algorithm은 [Factor graphs and the sum-product algorithm](https://i
 > 본 실험 환경은 2개의 base matrix중 $BG1: 46 \times 68$ matrix를 사용하여 진행하였다.
 
 ### DNN
->채널 코딩은 선형 부호 코드와 신호 변조의 조합으로 사용되고 있다. 본 실험에서는 LDPC,QAM기반 신호 변조 과정을 심층 신경망으로 대체한다. 메세지가 연속적이라는 특성을 사용하여 RNN구조를 사용한다. Encoder부분에는 LDPC를 사용하여 Encoding을 진행한 뒤, AWGN 채널을 통과한 신호 $Y^n$을 RNN으로 Decoding을 진행한다.  
+> 채널 코딩은 선형 부호 코드와 신호 변조의 조합으로 사용되고 있다. 
+본 실험에서는 LDPC,QAM기반 신호 변조 과정을 심층 신경망으로 대체한다. 메세지가 연속적이라는 특성을 사용하여 RNN구조를 사용한다. Encoder부분에는 LDPC를 사용하여 Encoding을 진행한 뒤, AWGN 채널을 통과한 신호 $Y^n$을 RNN으로 Decoding을 진행한다.  
 
 -----
 ----
