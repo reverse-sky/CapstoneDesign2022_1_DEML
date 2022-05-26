@@ -149,7 +149,7 @@ LDPC Decoding 과정은 Tanner graph를 사용한 sum product algorithm으로 �
 
 ![](https://velog.velcdn.com/images/heigarnik/post/1a389696-33fc-46e4-b937-7feeaa01e877/image.gif)
 
-![](https://velog.velcdn.com/images/heigarnik/post/1a62aa28-5358-4f94-a813-288782991c9a/image.gif)
+![](https://velog.velcdn.com/images/heigarnik/post/26cdd952-293f-4c02-ac02-eb2c28067e36/image.gif)
 -----
 
 ### LDPC
