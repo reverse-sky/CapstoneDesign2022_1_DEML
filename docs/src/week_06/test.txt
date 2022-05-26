@@ -1,1 +1,0 @@
-llr을 적용하여 spa를 hamming 코드에 적용
