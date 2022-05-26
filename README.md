@@ -141,11 +141,16 @@ LDPC Decoding 과정은 Tanner graph를 사용한 sum product algorithm으로 �
 
 ## 4 Simulation
 ### Hamming (7,4) code
+> LDPC를 구현하기 전 Hamming (7,4) code를 구현하여 BLER를 증명하였다. 
+> <img width="500" alt="image" src="https://user-images.githubusercontent.com/45085563/170305781-7ebcd03a-adba-4ef6-a86e-84dee2b33575.png">
 
 -----
 
 ### LDPC
 > 본 실험 환경은 2개의 base matrix중 $BG1: 46 \times 68$ matrix를 사용하여 진행하였다.
+> pytorch를 이용하여 LDPC code를 구현하였고, 밑의 그림은 LDPC code가 제안되어진 논문에서 MATLAB 구현한 코드와의 비교이다.
+>![image](https://user-images.githubusercontent.com/45085563/170550010-b6b05629-ae03-4658-85e2-a434198b3a9a.png)
+[An overview of channel coding for 5G NR cellular communications](https://www.cambridge.org/core/journals/apsipa-transactions-on-signal-and-information-processing/article/an-overview-of-channel-coding-for-5g-nr-cellular-communications/CF52C26874AF5E00883E00B6E1F907C7) 논문에서 서술하는 LDPC와 비교결과 다름이 없음을 보임.
 
 ### DNN
 > 채널 코딩은 선형 부호 코드와 신호 변조의 조합으로 사용되고 있다. 
@@ -155,5 +160,7 @@ LDPC Decoding 과정은 Tanner graph를 사용한 sum product algorithm으로 �
 ----
 
 ## 5 Result
+> 본 프로젝트의 초기 목적이었던 "5G NR 무선 통신에서 사용되는 통신 물리계층 시뮬레이터를 pytorch 기반으로 딥러닝과 연동할 수 있도록 구현" 은 기존의 논문과 비교하여 동일한 성능을 내는 것을 증명하였다. 또한 궁극적인 목표인 python으로 학습한 딥러닝 parameter들을 C++이나 matlab으로 옮겨놓은 다음 pretrained model의 방식으로 딥러닝을 적용하는 것이 아닌, pytorch로 구현함에 따라, 기존의 방식보다 효율적으로 딥러닝 학습을 사용할 수 있고, 빠른 연산을 위한 GPU를 사용한 병렬 연산이 가능하다.  
+
 
 ## 6 Expectation plan
