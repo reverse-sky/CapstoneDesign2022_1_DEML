@@ -16,5 +16,6 @@
 # 교수님과 주간 미팅 2022-04-29
 > **MATLAB기반 코드리뷰진행 **
 >![image](https://user-images.githubusercontent.com/45085563/170329228-05685402-6fde-4001-8e8c-03397f58c965.png)
-# 일정표 
-> ![image](https://user-images.githubusercontent.com/45085563/170328672-dac1d537-acae-4769-88bb-06b7cd0f0963.png)
+# WBS 
+> ![image](https://user-images.githubusercontent.com/63450024/170600617-7a7642a5-2652-4eb3-8689-a196bcce5ec6.png)
+
