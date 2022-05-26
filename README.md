@@ -61,11 +61,12 @@
 > + 수신기를 통과해서 얻은 값 $\hat m(t)$을 원래의 신호 $m(t)$로 복원하는 과정을 복조화(demodulation)이라고 한다. 반대로 원래의 신호 $m(t)$를 수신기에서 복조하기 쉽게 $s(t)$로 바꾸는 과정을 부호(modulation)라고 한다. 
 
 >다음은 위의 과정을 파트별로 세분화 한 디지털 통신 시스템의 블록도이다. 
-![](https://velog.velcdn.com/images/reversesky/post/8af6e3a9-5c09-4675-a641-af039a660268/image.png)
+
+<img src="https://velog.velcdn.com/images/reversesky/post/8af6e3a9-5c09-4675-a641-af039a660268/image.png" width="600" height="300" alt="그림 설명" />
 > 디지털 통신 시스템은 크게 소스 코딩(source coding)과 채널 코딩(channel coding)으로 나눌 수 있다. 소스 코딩은 디지털 데이터를 압축하여 전송량을 줄이는 기법이며, 주로 한정된 대역폭 특성을 극복하기 위해 사용한다. 채널 코딩은 통신 채널을 통과하면서 발생하는 오류를 수신기에서 검출하거나 정정할 수 있도록 송신기에서 의도적으로 데이터를 추가하는 기법이다. 본 프로젝트는 현재 5G NR통신에서 상용중인  LDPC 채널 코딩 방식을 pytorch를 이용하여 구현하는 것을 목표로 하고 있다.    
 
 > 우선 LDPC 채널 코딩을 구현하기 위해 채널 코딩 시스템에 대해서 알아 보자. 
- ![](https://velog.velcdn.com/images/reversesky/post/5b1fa40e-b1b4-4bd3-a992-c8babc2b0b15/image.png)
+<img src="https://velog.velcdn.com/images/reversesky/post/5b1fa40e-b1b4-4bd3-a992-c8babc2b0b15/image.png" width="600" height="300" alt="b" />
 
 > 다음은 AWGN채널을 사용하는 무선 이동 통신 시스템을 나타낸 구조도 이다. AWGN채널을 사용하는 채널 코딩은 크게 ENC(Encoding channel), AWGN(Additive White Gaussian Noise), DEC(Decoding-Channel)로 나누어 진다. 이는 디지털 통신 시스템 블록도에서 소스 코딩 부분을 제외한 부분으로 Channel Coder와 Modulation부분을 합쳐서 ENC, AWGN채널을 통과해서 수신받은 신호를 demodulation하고 Channel decoder 하는 부분을 합쳐서 DEC로 정의한다. 
 > + AWGN 채널은 대기중에 신호를 전송시 더해지는 잡음을 표현하는 채널로서 잡음 $Z$~ $N(0,\sigma^2)$를 확률분포로 갖는다. 
@@ -74,10 +75,11 @@
 
 
 > 통신에 있어서 가장 중요한 두 가지 자원은 대역폭과 송신 전력이다. 대역폭은 왜곡 없는 전송을 위해 필요한 요소이다. 송신 전력은 수신측에서 원하는 품질을 얻기 위하여 거리에 따른 손실을 거려하여 산출한다. 잡음이 신호에 대한 영향을 나타내는 척도:신호 대 잡음비(signal to noise ration)를 SNR으로 정의하며 식은 다음과 같다. 
-+ $SNR [dB] = 10 log\frac{S}{N}[dB]$ 
- $S$: 평균 신호 전력 $S = P_{s(avg)}= v^2_{s(rms)}$  
- $N$: 평균 잡음 전력 $N = P_{N(avg)}=v^2_{n(rms)}$
++ $SNR [dB] = 10 log\frac{S}{N}[dB]$   
+ $S$: 평균 신호 전력 $S = P_{s(avg)}= v^2_{s(rms)}$    
+ $N$: 평균 잡음 전력 $N = P_{N(avg)}=v^2_{n(rms)}$  
  [정보통신기술용어해설](http://www.ktword.co.kr/word/abbr_view.php?m_temp1=1214)
+ +
  디지털 통신에서는 수신측에서 원하는 비트오율(bit error rate:BER)을 기준으로 평가한다. 그러나 메세지는 한 bit만 잘못되어도 메세지가 왜곡되어진다. 따라서 n개의 bit를 보냈을 때 하나의 bit만 잘못 예측하더라도 전송한 메세지의 예측을 실패했다고 가정하는 오류 측정 기준을 BLER(Block Error Rate)으로 정의한다. 
  디지털 통신에서는 어떤 경우에나 통신을 위한 최소 SNR이 요구되며, SNR값이 커질 수록 BER는 증가한다.   
 
