@@ -16,5 +16,5 @@
 
 # 교수님과 주간 미팅 X 
 > 지난주 미팅이 최종 
-# 일정표 
->  ![image](https://user-images.githubusercontent.com/45085563/170346441-3aa50eb5-3be5-43fd-9c2b-2dcb7aa20bb4.png)
+# 
+> ![image](https://user-images.githubusercontent.com/63450024/170605108-17e76061-47cc-43b9-87e6-d2e7c6dc56a2.png)
