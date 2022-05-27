@@ -18,5 +18,5 @@
 > **다음주에 서울에서 열리는 IEEE ICC 학회에 대한 안내 및 필수로 들어야 할 강의 탐색**
 
 > ![image](https://user-images.githubusercontent.com/45085563/170332922-9126cf32-c5c3-4259-9aef-530d36365b44.png)
-# 일정표 
+# WBS
 > ![image](https://user-images.githubusercontent.com/45085563/170344962-e048dc72-d579-40d6-8b7a-f8b2032bc41f.png)
