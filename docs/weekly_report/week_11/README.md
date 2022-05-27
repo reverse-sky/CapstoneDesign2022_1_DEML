@@ -19,4 +19,4 @@
 
 > ![image](https://user-images.githubusercontent.com/45085563/170332922-9126cf32-c5c3-4259-9aef-530d36365b44.png)
 # WBS
-> ![image](https://user-images.githubusercontent.com/45085563/170344962-e048dc72-d579-40d6-8b7a-f8b2032bc41f.png)
+> ![image](https://user-images.githubusercontent.com/63450024/170603986-e4f2395e-43d9-4b26-aa5e-cd6560b97f88.png)
