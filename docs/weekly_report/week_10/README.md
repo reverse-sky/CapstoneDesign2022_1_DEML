@@ -15,5 +15,5 @@
 # 교수님과 주간 미팅 2022-05-06
 > **qam에 대한 분석진행 **
 > ![image](https://user-images.githubusercontent.com/45085563/170340971-a06378b7-4a86-442b-8c87-79c4b18132c5.png)
-# 일정표 
-> ![image](https://user-images.githubusercontent.com/45085563/170332103-f7e0bcba-eb43-439d-8169-d8014c41078b.png)
+# WBS
+> ![image](https://user-images.githubusercontent.com/63450024/170602761-ba9b0c3c-7de5-4935-a8f4-aaad86920cb9.png)
