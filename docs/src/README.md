@@ -83,6 +83,11 @@ def resize_sparse():
 
 ---
 ## Week 11
+
+NR LDPC 구현: 부족한 부분 수정
+
+---
+## Week 12
 구현한 패키지를 사용하여 1/3, 2/3, 8/9 의 Code rate에 대한 결과값 확인 및 비교
 비교를 위한 성능 기준 :
 
@@ -94,11 +99,7 @@ def resize_sparse():
 <img src="https://velog.velcdn.com/images/heigarnik/post/467e321c-3f85-49dc-9dc5-f29c4fd9b2de/image.png">
 
 ---
-## Week 12
-패키지를 활용한 pytorch 기반의 Deep learning model 개발
-
----
 ## Week 13
-nrLDPC의 성능과 비교
+시각화 
 
 ---
