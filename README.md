@@ -43,7 +43,7 @@
 |Name|Department|Contact|Github|
 |---|---|---|---|
 |Kim MinHyuk| Hallym-univ/Big-data| hyuk6745@gmail.com |https://github.com/heigarnik
-|Yong KwonSoon| Hallym-univ/Big-data| yykks3971@gmail.com|https://github.com/reversesky
+|Yong KwonSoon| Hallym-univ/Big-data| yykks3971@gmail.com|https://github.com/reverse-sky
 -----
 ## **A professor in charge**
 |Name|Department|Contact|
